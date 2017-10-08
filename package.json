@@ -1,0 +1,17 @@
+{
+  "name": "resurrector",
+  "version": "0.0.1",
+  "main": "index.js",
+	"author": "Szymon Kaliski <hi@szymonkaliski.com> (http://szymonkaliski.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "dateformat": "^3.0.2",
+    "lodash.findindex": "^4.6.0",
+    "omgosc": "^1.0.0",
+    "yargs": "^9.0.1"
+  },
+  "bin": {
+    "resurrector": "./cli.js"
+  }
+}

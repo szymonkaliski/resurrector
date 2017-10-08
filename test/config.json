@@ -1,0 +1,9 @@
+{
+  "port": 4000,
+  "interval": 100,
+  "path": "/hb/",
+  "processes": [
+    { "id": "app 1", "cmd": "node app1.js", "timeout": 2000 },
+    { "id": "app 2", "cmd": "node app2.js", "timeout": 5000 }
+  ]
+}
