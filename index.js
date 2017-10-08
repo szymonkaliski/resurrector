@@ -32,7 +32,7 @@ const idWithColor = processId => {
   const idx = findIndex(config.processes, ({ id }) => id === processId);
   const color = PROCESS_ID_COLORS[idx % PROCESS_ID_COLORS.length];
 
-  return `[ ${chalk[color](processId)} ${chalk.gray(readableDate())} ]`;
+  return `${chalk.gray(readableDate())} [${chalk[color](processId)}]`;
 };
 
 const makeLogger = processId => data => {

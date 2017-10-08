@@ -1,6 +1,6 @@
 {
   "name": "resurrector",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "index.js",
   "description": "automatically resurrect processes based on heartbeat signal",
   "author": "Szymon Kaliski <hi@szymonkaliski.com> (http://szymonkaliski.com/)",
