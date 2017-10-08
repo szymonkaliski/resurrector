@@ -1,8 +1,8 @@
 # Resurrector
-## Automatically resurect process that stop responding
+## Automatically resurrect process that stop responding
 
-It's easy to detect process crash, but harded to detect when it hangs without quitting.
-**Resurrector** uses heartbeat through OSC to automatically restart process that stopped respoding.
+It's easy to detect process crash, but hard to detect when it hangs without quitting.
+**Resurrector** uses heartbeat through OSC to automatically restart process that stopped responding.
 
 ### Usage
 
@@ -27,7 +27,7 @@ It's easy to detect process crash, but harded to detect when it hangs without qu
 #### Main config
 
 * `port` - OSC port that resurrector listens on (defaults to `3000`)
-* `interval` - how often resurrevtor checks for heartbeat (defaults to `100`ms)
+* `interval` - how often resurrector checks for heartbeat (defaults to `100`ms)
 * `path` - OSC path to send heartbeat on (defaults to `/hb/`)
 * `processes` - array of processes to start
 
@@ -39,5 +39,5 @@ It's easy to detect process crash, but harded to detect when it hangs without qu
 
 ### Heartbeat
 
-Each of the running processes should periodically ping resurrector with OSC message on specifed port and path, sending the process id (from config) as only parameter.
+Each of the running processes should periodically ping resurrector with OSC message on specified port and path, sending the process id (from config) as only parameter.
 So for the sample config, process 1 sends: `/hb/ "app 1"` on OSC `4000`, and process 2 sends: `/hb/ "app 2"` on OSC `4000`.
