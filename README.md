@@ -37,7 +37,7 @@ It's easy to detect process crash, but harded to detect when it hangs without qu
 * `cmd` - command to run
 * `timeout` - how long to wait before restarting
 
-## Heartbeat
+### Heartbeat
 
 Each of the running processes should periodically ping resurrector with OSC message on specifed port and path, sending the process id (from config) as only parameter.
 So for the sample config, process 1 sends: `/hb/ "app 1"` on OSC `4000`, and process 2 sends: `/hb/ "app 2"` on OSC `4000`.
