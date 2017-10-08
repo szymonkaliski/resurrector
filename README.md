@@ -1,5 +1,5 @@
 # Resurrector
-## Automatically resurrect process that stop responding
+## Automatically resurrect processes based on heartbeat signal
 
 It's easy to detect process crash, but hard to detect when it hangs without quitting.
 **Resurrector** uses heartbeat through OSC to automatically restart process that stopped responding.

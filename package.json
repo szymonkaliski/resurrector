@@ -1,8 +1,9 @@
 {
   "name": "resurrector",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "index.js",
-	"author": "Szymon Kaliski <hi@szymonkaliski.com> (http://szymonkaliski.com/)",
+  "description": "automatically resurrect processes based on heartbeat signal",
+  "author": "Szymon Kaliski <hi@szymonkaliski.com> (http://szymonkaliski.com/)",
   "license": "MIT",
   "dependencies": {
     "chalk": "^2.1.0",
